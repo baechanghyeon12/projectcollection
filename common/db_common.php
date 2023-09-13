@@ -76,20 +76,20 @@
     // 파라미터	: Array       &$param_no
     // 리턴값	: Array/String  $result[0]/ERRMSG
     // ---------------------------------
-    function select_list_no( &$param_no ) // 0419 edit 함수명
+    function get_u_id( &$param_no ) // 0419 edit 함수명
     {
         $sql =
             " SELECT "
             ." * " // 0420 edit 값 전체 받아오게 변경
             ." FROM "
-            ."  to_do_list_info "
+            ."  user_info "
             ." WHERE "
-            ."  list_no = :list_no "
+            ."  u_id = :u_id "
             ;
 
         $arr_prepare =
             array(
-                ":list_no"   => $param_no
+                ":u_id"   => $param_no
             );
 
         $conn = null;

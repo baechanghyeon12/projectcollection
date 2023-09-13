@@ -55,15 +55,23 @@ include_once(URL);
         <!-- Section-->
         <!-- Login form -->
         <div class="position-absolute top-50 start-50 translate-middle">
-          <form action="sub_login.php" method="post" >
+          <form action="sub_sign_up.php" method="post" >
+            <label for="u_name">이름</label>
+            <input type="text" id="u_name" name="u_name">
+            <br>
             <label for="id">ID</label>
             <input type="text" id="id" name="u_id">
             <br>
             <label for="pw">PW</label>
             <input type="text" id="pw" name="u_pw">
             <br>
-            <button type="submit">Login</button>
-            <a href="sign_up.php">회원가입</a>
+            <label for="u_ph">전화번호</label>
+            <input type="text" id="u_ph" name="u_ph">
+            <br>
+            <label for="u_email">이메일</label>
+            <input type="text" id="u_email" name="u_email">
+            <br>
+            <button type="submit">회원가입</button>
           </form>
         </div>
         <!-- Footer-->
